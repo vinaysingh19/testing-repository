@@ -14,6 +14,6 @@ done
 
 for id in $(cat /tmp/id.txt)
 do
-	echo "$AWSD --profile shaadiprod --region us-east-1 ec2 terminate-instances --instance-ids $id"
+	$AWSD --profile shaadiprod --region us-east-1 ec2 terminate-instances --instance-ids $id
 
 done
